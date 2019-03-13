@@ -1,0 +1,33 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "cn.facebank.common.curator.CuratorProperties",
+      "name": "zookeeper",
+      "type": "cn.facebank.common.curator.CuratorProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "cn.facebank.common.curator.CuratorProperties",
+      "defaultValue": "localhost:2181",
+      "name": "zookeeper.address",
+      "type": "java.lang.String",
+      "description":"zookeeper地址，集群用,隔开"
+    },
+    {
+      "sourceType": "cn.facebank.common.curator.CuratorProperties",
+      "defaultValue": 10,
+      "name": "zookeeper.retry-count",
+      "type": "java.lang.Integer",
+      "description":"zookeeper链接异常重试次数"
+    },
+    {
+      "sourceType": "cn.facebank.common.curator.CuratorProperties",
+      "defaultValue": 5000,
+      "name": "zookeeper.sleep-ms-between-retris",
+      "type": "java.lang.Integer",
+      "description":"zookeeper链接异常重试等待毫秒数"
+    }
+  ]
+}
